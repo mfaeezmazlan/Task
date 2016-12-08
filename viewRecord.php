@@ -8,7 +8,7 @@ EOF;
 	$ret = $db->query($sql);
 
 	while($row=$ret->fetchArray(SQLITE3_ASSOC)){
-		echo "<tr id='tRow_".$row['ID']."''><td>".$row['ID']."</td><td>".$row['NAME']."</td><td>".$row['DETAILS']."</td><td><button class='btn btn-info' onclick='editRecord(\"".$row['ID']."\")'><i class='fa fa-pencil'></i></button> <button onclick='deleteRecord(\"".$row['ID']."\")' class='btn btn-danger' id='del".$row['ID']."' value='".$row['ID']."'><i class='fa fa-trash'></i></button></td></tr>";
+		echo "<tr id='tRow_".$row['ID']."''><td>".$row['ID']."</td><td>".$row['NAME']."</td><td>".$row['DETAILS']."</td><td><button type='button' class='btn btn-info' data-toggle='modal' onclick='editRecord(\"".$row['ID']."\")' data-target='#editModal'><i class='fa fa-pencil'></i></button> <button onclick='deleteRecord(\"".$row['ID']."\")' class='btn btn-danger' id='del".$row['ID']."' value='".$row['ID']."'><i class='fa fa-trash'></i></button></td></tr>";
 	}
 	echo "</table>";
 
