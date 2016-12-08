@@ -43,7 +43,6 @@
 						To edit task, user can simply click on the pencil icon on the task that he/she want to delete and a modal dialog will appear. Edit and simply submit the changes.<br>
 
 						To delete task, user can click on the trash icon and the task will be deleted.
-					</div>
 				</div>
 			</div>
 		</div>
