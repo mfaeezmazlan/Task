@@ -10,7 +10,7 @@
 	if(!$db){
 		echo $db->lastErrorMsg();
 	}else{
-		echo "Database opened successfully\n";
+		echo "<script>console.log('Database opened successfully\n');</script>";
 		if(filesize('Task.db')==0){
 			$sql=<<<EOF
 			CREATE TABLE TASK
@@ -25,7 +25,7 @@ EOF;
 			if(!$exec){
 				echo $db->lastErrorMsg();
 			}else{
-				echo "Table create successfully\n";
+				echo "<script>console.log('Table create successfully\n')</script>";
 			}
 		}
 	}

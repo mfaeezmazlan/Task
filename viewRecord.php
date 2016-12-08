@@ -3,7 +3,7 @@
 	$sql =<<<EOF
 SELECT * from TASK;
 EOF;
-			
+	echo "<h3>List of all task</h3>";
 	echo "<table class='table table-bordered table-hover table-striped'><thead><th>ID</th><th>TASK NAME</th><th>TASK DETAIL</th><th>START DATE</th><th>END DATE</th><th>ACTION</th></thead>";
 	$ret = $db->query($sql);
 
