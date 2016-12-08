@@ -14,8 +14,10 @@ EOF;
 	$idGet++;
 	$inName = $_POST['inName'];
 	$inDetail = $_POST['inDetail'];
+	$inStartDate = $_POST['inStartDate'];
+	$inEndDate = $_POST['inEndDate'];
 	$sql =<<<EOF
-      INSERT INTO TASK (ID,NAME,DETAILS) VALUES ('$idGet','$inName','$inDetail');
+      INSERT INTO TASK (ID,NAME,DETAILS,START_DATE,END_DATE) VALUES ('$idGet','$inName','$inDetail','$inStartDate','$inEndDate');
 EOF;
 
 	$ret = $db->exec($sql);

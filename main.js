@@ -42,10 +42,14 @@ function deleteRecord(id){
 $("#btnSave").click(function(){
 	var name = $("#inName").val();
 	var detail = $("#inDetails").val();
-	$.post("saveRec.php",{inName: name, inDetail: detail}, function(data){
+	var startDate = $("#inStartDate").val();
+	var endDate = $("#inEndDate").val();
+	$.post("saveRec.php",{inName: name, inDetail: detail, inStartDate: startDate, inEndDate: endDate}, function(data){
 		console.log(data);
-		$("#inName").val("");
-		$("#inDetails").val("");
+		$("#inName").val(null);
+		$("#inDetails").val(null);
+		$("#inStartDate").val(null);
+		$("#inEndDate").val(null);
 		loadlink();
 	});
 });

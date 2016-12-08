@@ -35,9 +35,12 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="col-xs-4">
+					<h3>Create task</h3>
 						<div class="well">
 							<input type="text" class="form-control" id="inName" placeholder="Enter taskname" />
 							<input type="text" class="form-control" id="inDetails" placeholder="Enter details" />
+							<input type="text" class="form-control" id="inStartDate" placeholder="Start Date" />
+							<input type="text" class="form-control" id="inEndDate" placeholder="End Date" />
 							<button class="btn btn-success form-control" id="btnSave">Create new task <i class="fa fa-plus"></i></button>
 						</div>
 					</div>
